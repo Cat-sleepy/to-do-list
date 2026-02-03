@@ -1,0 +1,14 @@
+#area, #area2 {
+    font: normal 20px Arial, sans-serif;
+    background-color: rgb(10, 148, 10);
+    color: white;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    margin: 20px;
+}
+
+.resultado {
+    margin-top: 16px;
+}

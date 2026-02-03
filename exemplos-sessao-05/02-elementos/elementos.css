@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(68, 125, 199);
+    color: white;
+    font: normal 16px Arial, sans-serif;
+    padding: 20px;
+}
+
+.item {
+    font-weight: bold;
+    color: orange;
+}
+
+.titulo-lista-1 {
+    font-size: 32px;
+    color: yellow;
+    text-decoration: underline;
+}
