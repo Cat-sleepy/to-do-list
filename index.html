@@ -7,12 +7,32 @@
     <link rel="stylesheet" href="todoList.css">
     <script src="todoList.js" defer></script>
 </head>
-
 <body>
-    
+
+    <header><h1>A Minha To-Do List</h1> </header>
+
     <main>
+        <section class="nova-tarefa" aria-labelledby="nova-tarefa">
 
-
+            <h2 id = "novaT">Adicionar Tarefa</h2>
+            <form>
+                <div>
+                    <label for="tarefa"> Descrição da Tarefa</label>
+                    <input type="text" id="tarefa" name="tarefa">
+                </div>
+                <button type="submit">ADICIONAR</button>
+            </form>
+        </section>
+        <section class= "lista-tarefas" aria-labelledby="lista-tarefas">
+            <h2 id ="listaT">Tarefas</h2>
+            <ul>
+                <li>
+                    <article>
+                        <p>Exemplo</p>
+                    </article>
+                </li>
+            </ul>
+        </section>
     </main>
 
 </body>

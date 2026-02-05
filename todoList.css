@@ -1,0 +1,33 @@
+main {
+  display: grid;
+  align-items: center;
+  max-width: 500px;
+  background-color:blanchedalmond;
+  border-radius: 20px;
+  margin: 0 auto;
+  padding: 3rem 5rem 3rem 5rem;
+}
+
+
+body {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+}
+
+.nova-tarefa {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+#novaT{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+    padding: 0.8rem;
+}
