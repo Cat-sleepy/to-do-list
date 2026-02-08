@@ -8,33 +8,48 @@
     <script src="todoList.js" defer></script>
 </head>
 <body>
-    
-    <header><h1>TO DO LIST</h1> </header>
+  <div class="app">
+    <header class="app__header">
+      <h1>To-Do</h1>
+      <p>Organiza as tuas tarefas</p>
+    </header>
 
-    <main>
-        <section class="nova-tarefa" aria-labelledby="nova-tarefa">
+    <main class="app__main">
+      <form id="formTarefa" class="composer">
+        
+        <button type="submit" class="btn-hidden">Adicionar</button>
+      </form>
 
-            <h2 id = "novaT">Nova Tarefa</h2>
-            <form>
-                <div>
-                    <label for="tarefa"> Descrição da Tarefa</label>
-                    <input type="text" id="tarefa" name="tarefa">
-                </div>
-                <button type="submit">ADICIONAR</button>
-            </form>
-        </section>
-        <section class= "lista-tarefas" aria-labelledby="lista-tarefas">
-            <h2 id ="listaT">Tarefas</h2>
-            <ul>
-                <li>
-                    <article>
-                        <p>Exemplo</p>
-                    </article>
-                </li>
-            </ul>
-        </section>
-    </main>
+      <ul id="lista" class="list"></ul>
+
+<ul id="lista" class="list"></ul>
+
+<button class="fab" id="fab" type="button" aria-label="Adicionar tarefa">+</button>
+
+<!-- MODAL -->
+<div class="modal" id="modal" aria-hidden="true">
+  <div class="modal__overlay" data-close="true"></div>
+
+  <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal__header">
+      <h3 id="modalTitle">Nova tarefa</h3>
+      <button class="icon-btn" id="closeModal" type="button" aria-label="Fechar">✕</button>
+    </div>
+
+    <form id="modalForm" class="modal__form">
+      <input
+        type="text"
+        id="modalInput"
+        placeholder="Escreve a tarefa…"
+        autocomplete="off"
+      />
+      <button type="submit" class="modal__submit" id="modalSubmit">Adicionar</button>
+
+    </form>
+  </div>
+</div>
 
 </body>
+
 
 </html>
